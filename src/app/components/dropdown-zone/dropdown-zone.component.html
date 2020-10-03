@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="dropdownArea">
+        <app-green-dropdown (change)="yearSelected($event)" [options]="classyears" txt="Choose year">
+        </app-green-dropdown>
+        <app-green-dropdown (change)="classSelected($event)" [options]="classTypes" txt="Choose Class">
+        </app-green-dropdown>
+    </div>
+    <data-grid [dataList]="studentListArr()"></data-grid>
+</div>

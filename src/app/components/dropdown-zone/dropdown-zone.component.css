@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.container > .dropdownArea {
+    padding-top: 2vh;
+    display: flex;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,44 @@
+.tile {
+  background-color: whitesmoke;
+  margin-bottom: 2vh;
+  padding: 3vh 3vh 0 3vh;
+}
+
+.gridWrapper {
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(1, 100vw);
+  grid-template-rows: repeat(2, 40vh);
+  grid-column-gap: 1vw;
+
+}
+
+.submitBtn {
+  background-color: yellowgreen;
+  color: white;
+  margin-top: 3vh;
+  line-height: 4vh;
+  width: 10vw;
+  border: 0;
+  font-weight: bold;
+}
+
+.buttonWrap {
+  float: right;
+}
+
+.quill {
+  margin-top: 30px;
+}
+
+.titleBar {
+  background-color: lightgray;
+  width: 100%;
+  line-height: 4vh;
+}
+.title {
+  font-size: 2vh;
+  font-weight: 500;
+  margin-left: 5vh;
+
+}

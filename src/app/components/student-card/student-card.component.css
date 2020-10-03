@@ -1,0 +1,61 @@
+.mat-icon {
+    font-size: 80px;
+    color:yellowgreen;    
+  }
+
+  .container{
+    display: flex;
+    justify-content: left ;
+    height: 70px;
+  }
+
+  .mat-card{
+    background-color:white;
+    margin-bottom: 1vh;
+
+  }
+  
+  .wrapper {
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 8vw);
+    grid-template-rows: repeat(2, 4vh);
+    grid-column-gap: 5vw;
+    margin-left: 7vw;
+    margin-top: 1vh;
+  }
+
+  .text {
+    display: flex;
+    justify-content: space-between;
+  }
+  input{
+      width: 45px;
+      height: 21px;
+      text-align: center;
+      font-weight: bold;
+  
+      background-color: cornsilk;
+      border-radius: 5px;
+      border-width: 1px;
+      border-color: lightgray;
+  }
+
+  .scoreTxt {
+    margin-top: 4px;
+  }
+
+  .top {
+    border-radius: 2px;
+    border-width: 1;
+    border-color: lightgray;
+    margin: 1vh;
+  }
+
+  .active {
+    border-style: solid;
+    border-color: yellowgreen;
+  }
+  .red {
+    background-color: pink;
+  }

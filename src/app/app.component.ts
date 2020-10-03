@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Store } from '@ngrx/store';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'studentTracker';
+  studData: any;
+  editorStyle = {
+    'background-color': 'white',
+    'height':'30vh'
+  }
+
+  constructor(private store: Store<{ schoolStore }>) {
+    this.store.subscribe(v => {
+      let stud = v.schoolStore.selectedStudent
+      this.studData = Object.assign({},stud )
+    })
+  }
+
+
+  selectedStud() {
+    return this.studData
+  }
 }

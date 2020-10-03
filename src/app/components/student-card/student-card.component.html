@@ -1,0 +1,16 @@
+<div class="top" >
+    <mat-card *ngIf="data" background="white" [ngClass]="selectClass">
+        <div class="container">
+            <mat-icon>portrait</mat-icon>
+            <div class="wrapper">
+                <div class="text">Name: <b>{{data.fname}}</b></div>
+                <div class="text">Class: <b>{{data.class}}</b></div>
+                <div></div>
+                <div class="text">S.Name: <b>{{data.lname}}</b></div>
+                <div class="text">Year: <b>{{data.year}}</b></div>
+                <div class="text"><p class="scoreTxt">Score:</p> <input type="number" value="{{data.grade}}"></div>
+            </div>
+        </div>
+    </mat-card>
+
+</div>

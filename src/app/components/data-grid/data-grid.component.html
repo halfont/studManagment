@@ -1,0 +1,37 @@
+<div class="top">
+    <div class="iconBar">
+        <mat-icon class="iconSpacing" (click)='viewToggle("collapse")' aria-hidden="false" aria-label="collapsed"
+        [ngStyle]="{'color': 'yellowgreen'}">menu</mat-icon>
+        <mat-icon class="iconSpacing" (click)='viewToggle("expand")' aria-hidden="false" aria-label="expand"
+            [ngStyle]="{'color': 'yellowgreen'}">view_agenda</mat-icon>
+    </div>
+    <div class="container">
+        <div class="cardContainer">
+            <div *ngIf='viewType === "expand"; else collapse '>
+                <student-card (click)="clickRow(i)" [selectClass]='rowClass(stud.grade, i)' [data]="stud"
+                    *ngFor="let stud of dataList; let i = index" [attr.data-index]="i"></student-card>
+            </div>
+        </div>
+        <ng-template #collapse>
+            <div class="tableContainer">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>S.Name</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr (click)="clickRow(i)" [ngClass]='rowClass(stud.grade, i)'
+                            *ngFor="let stud of dataList; let i = index" [attr.data-index]="i">
+                            <td>{{stud.fname}}</td>
+                            <td>{{stud.lname}}</td>
+                            <td class="scoreClmn">{{stud.grade}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </ng-template>
+    </div>
+</div>

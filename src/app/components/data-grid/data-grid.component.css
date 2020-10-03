@@ -1,0 +1,72 @@
+.top {
+    min-width: 25vw;
+}
+.iconBar {
+    height: 2.5vh;
+    width: 100%;
+}
+.iconSpacing {
+    float: right;
+    margin-left: 1px;
+    margin-right: 0.5vw;
+}
+.container {   
+    width: 100%;
+    margin-top: 0.5vh;
+
+}
+.cardContainer {
+    height: 30vh;
+    width: fit-content;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+.tableContainer {
+    height: 30vh;
+    width: fit-content;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+table {
+    margin-left: 10px;
+    border-collapse: collapse;    
+    text-align: left;   
+}
+
+td {
+    border: 1px solid #999;
+    padding: 5px;
+    font-weight: bold;
+    width: 15vw;
+}
+
+td:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+    background-color: yellow;
+
+  }
+
+th {
+    border: 1px solid #999;
+    padding: 5px;
+    font-weight: normal;
+    
+}
+
+.scoreClmn {
+    text-align: center;
+}
+
+thead {
+    background-color: palegreen;
+}
+
+
+
+.red {
+ background-color: pink;
+}
+.active {
+ background-color: cornsilk;
+}
